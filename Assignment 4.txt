@@ -1,0 +1,14 @@
+1) Overloading of functions or methods ( Function Overloading ).
+Overloading of operators ( Operator Overloading ).
+
+2) The str() built-in is used to cast an instance of a class to a str object, or more appropriately, to obtain a user-friendly string representation of the object which can be read by a normal user rather than the programmer. You can define the string format your object should be displayed in when passed to str() by defining the __str__() method in your class. Moreover, __str__() is the method that is used by Python when you call print() on your object.
+
+3) The __getitem__ method is used for accessing list items, array elements, dictionary entries etc. slice is a constructor in Python that creates slice object to represent set of indices that the range(start, stop, step) specifies. __getitem__ method can be implement in a class, and the behavior of slicing can be defined inside it.
+
+Syntax:
+
+__getitem__(slice(start, stop, step))
+
+4) Python provides the operator x += y to add two objects in-place by calculating the sum x + y and assigning the result to the first operands variable name x . You can set up the in-place addition behavior for your own class by overriding the magic “dunder” method __iadd__(self, other) in your class definition.
+
+5) Operator overloading is mostly useful when you're making a new class that falls into an existing "Abstract Base Class" (ABC) -- indeed, many of the ABCs in standard library module collections rely on the presence of certain special methods (and special methods, one with names starting and ending with double underscores
